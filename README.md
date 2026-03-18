@@ -13,8 +13,11 @@ Analyze the response and the Output.
 The aim is to understand how to request help from AI tools for tasks like writing Python code, integrating with APIs, comparing outputs, and generating actionable insights.
 
 Code:
+
 from nltk.sentiment import SentimentIntensityAnalyzer
+
 import nltk
+
 nltk.download('vader_lexicon')
 #Simulated AI-generated text
 generated_text = "This smartphone offers outstanding battery life and an intelligent AI
