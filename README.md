@@ -14,39 +14,39 @@ The aim is to understand how to request help from AI tools for tasks like writin
 
 Code:
 
-from nltk.sentiment import SentimentIntensityAnalyzer
+    from nltk.sentiment import SentimentIntensityAnalyzer
 
-import nltk
+    import nltk
 
-nltk.download('vader_lexicon')
+    nltk.download('vader_lexicon')
 
-Simulated AI-generated text
+    Simulated AI-generated text
 
-generated_text = "This smartphone offers outstanding battery life and an intelligent AI camera that captures stunning photos."
+    generated_text = "This smartphone offers outstanding battery life and an intelligent AI camera that captures stunning photos."
 
-print("Generated Review:\n")
+    print("Generated Review:\n")
 
-print(generated_text)
+    print(generated_text)
 
-Sentiment analysis
+    Sentiment analysis
 
-sia = SentimentIntensityAnalyzer()
+    sia = SentimentIntensityAnalyzer()
 
-sentiment = sia.polarity_scores(generated_text)
+    sentiment = sia.polarity_scores(generated_text)
 
-print("\nSentiment Analysis:")
+    print("\nSentiment Analysis:")
 
-print(sentiment)
+    print(sentiment)
 
-Insight generation
+    Insight generation
 
-if sentiment['compound'] > 0:
+    if sentiment['compound'] > 0:
 
-    print("\nInsight: The review is positive and suitable for marketing promotion.")
+        print("\nInsight: The review is positive and suitable for marketing promotion.")
     
-else:
+    else:
 
-    print("\nInsight: The review tone is neutral or negative.")
+        print("\nInsight: The review tone is neutral or negative.")
 
 
 Output:
